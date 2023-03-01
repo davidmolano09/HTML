@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO Y LISTA</title>
+    <link rel="stylesheet" href="../CSS/Contacto.css">
+</head>
+<body style="background-color: aquamarine;">
+    <header>
+        <img src="../IMG/incap.png" width="100" height="100" alt="incap">
+        <h1>Formulario y Lista en HTML</h1>
+    </header>
+    <nav>
+        <ul>
+        <li>Home</li>
+        <li>Productos</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+        <fieldset>
+                <!--Seccion ingreso de nombre-->
+                <label for="">Nombre Completo</label>
+                <input type="text" name="nombre" placeholder="&#9756; ingrese su nombre" required>
+                <br><br>
+        <!--Seccion ingrese email-->
+        <label for="">Email</label>
+        <input type="text" name="nombre" placeholder="&#9874; email" required>
+        <br><br>
+        <label for="">Ingrese Contraseña</label>
+        <input type="password" name="contraseña" placeholder="&#9745; ingrese su contraseña" required>
+        <br><br>
+        <hr>
+        <!--Seccion Hobbies-->
+        <label for="">Selecciona tus Hobbies--</label>
+        <br>
+        <input type="checkbox" name="cine">Cine<br>
+        <input type="checkbox" name="lectura">Lectura<br>
+        <input type="checkbox" name="deporte">Deporte<br>
+        <br><br>
+        <!--Seccion Estado Civil-->
+        <input type="radio" value="viudo">viudo<br>
+        <input type="radio" value="casado">casado<br>
+        <input type="radio" value="soltero">soltero<br>
+        <br><br>
+        <!--Seccion opcion lista-->
+        <label for="">Programas Tecnicos</label>
+        <select name="" id="">
+            <option value="">Selecciones Programa</option>
+            <option value="">Sistemas</option>
+            <option value="">Diseño Grafico</option>
+            <option value="">Contabilidad</option>
+        </select>
+        <br><br>
+        <!--Seccion Comentario-->
+        <label for="">Comentario</label><br>
+        <textarea name="" id="" cols="40" rows="s"></textarea> 
+    </fieldset>
+    <br><br>
+    <!--seccion de botones formulario-->
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+        <br><br>
+        </form>
+    </section>
+    <!--seccion footer de pie-->
+    <footer>
+        <p>Derechos Reservados &copy;2023 &#64;David Molano</p>
+    </footer>
+</body>
+</html>
